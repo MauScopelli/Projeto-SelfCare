@@ -1,16 +1,16 @@
 <h1 align="center">
-    <img alt="Java Logo" title="Java Logo" src=".github/java-icon.png" width="220px" />
+    <img alt="Java Logo" title="Java Logo" src=".github/java-icon.png" width="350px" />
 </h1>
 
-<h3 align="center">
+<h1 align="center">
   SelfCare
-</h3>
+</h1>
 
 <p align="center">
- <a href="https://www.linkedin.com/in/pedromiguelsbs/">
-   <img alt="Made by" src="https://img.shields.io/static/v1?label=Made by&message=pedromiguelsbs&color=73A1FB&labelColor=000000">
+ <a href="https://www.linkedin.com/in/mauricio-martins-de-carvalho-junior/">
+   <img alt="Made by" src="https://img.shields.io/static/v1?label=Made by&message=MauricioScopelli&color=73A1FB&labelColor=000000">
  </a>
- <a href="https://github.com/pedromiguelsbs/self-care/blob/main/LICENSE">
+ <a href="https://github.com/MauScopelli/self-care/blob/main/LICENSE">
    <img alt="License" src="https://img.shields.io/static/v1?label=License&message=MIT&color=73A1FB&labelColor=000000">
  </a>
 </p>
@@ -22,7 +22,7 @@
 </p>
 
 <p align="center">
-  <img alt="Imagem da aplicação Web SelfCare" src=".github/selfcare.png" width="100%">
+  <img alt="Imagem da aplicação Web SelfCare" src=".github/selfcare.png" width="80%">
 </p>
 
 ## Sobre 
@@ -39,13 +39,13 @@ consultadas pelo usuário de maneira intuitiva, conforme sua necessidade.
 
 #### Arquitetura da Solução
 <p align="center">
-  <img alt="Imagem da arquitetura da aplicação" src=".github/arquitetura-solucao.png" width="100%">
+  <img alt="Imagem da arquitetura da aplicação" src=".github/arquitetura-solucao.png" width="80%">
 </p>
 
 #### Funcionalidades
 O Back-End será responsável pela aplicação das regras de negócio definidas, além da comunicação com o banco de dados da aplicação. <br>
 
-Por agora, a principal funcionalidade implementada na aplicação é a de comunicação com as informações dos usuários cadastrados. Através da interface de programação de aplicações 'API Rest', permitindo a interação com os serviços. <br>
+Por agora, a principal funcionalidade implementada na aplicação é a de comunicação com as informações dos usuários cadastrados, através da interface de programação de aplicações 'API Rest', permitindo a interação com os serviços. <br>
 
 Tal interação possibilitará a criação, listagem, alteração e até mesmo exclusão de informações de um usuário como: idade, peso, altura, frequência com que pratica atividades físicas, se possui comorbidades ou se está sob uso de medicações.
 
@@ -68,4 +68,4 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## Licença
 
-Esse projeto está sob a licença MIT. Consulte o arquivo [LICENSE](https://github.com/pedromiguelsbs/self-care/blob/main/LICENSE) para mais detalhes.
+Esse projeto está sob a licença MIT. Consulte o arquivo [LICENSE](https://github.com/MauScopelli/self-care/blob/main/LICENSE) para mais detalhes.
