@@ -1,0 +1,125 @@
+.content {
+	display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 2;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2rem;
+	left: 0;
+	right: 0;
+	width: 1110px;
+}
+
+.content .title {
+	color: #FAFAFA;
+	font-size: 2rem;
+	font-weight: 500;
+	text-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+}
+
+.btn-grad {
+	background-image: linear-gradient(135deg, #0396FF 0%, #50b6ff  51%, #23A3FF  100%);
+	width: 150px;
+	height: 50px;
+    margin: 1.5rem 0;
+    padding: .8rem 0;
+    text-align: center;
+    text-decoration: none;
+    transition: 1.3s;
+    background-size: 200% auto;
+    color: #FAFAFA;            
+	box-shadow: 2px 2px 5px rgba(32, 32, 32, .3);
+	border-radius: 5px;
+}
+
+.btn-grad:hover {
+	background-position: right center;
+    color: #FAFAFA;
+    text-decoration: none;
+}
+         
+
+.btn-grad, .message {
+	z-index: 2
+}
+
+.message {
+	margin-bottom: 15px;
+    padding: .8rem;
+    width: 100%;
+    color: #FAFAFA;
+    text-align: center;
+    border-radius: 12px;
+    opacity: .9;
+    background-image: linear-gradient(135deg, #0396FF 0%, #23A3FF 51%, #23A3FF 100%);
+}
+
+table {
+	z-index: 2;
+	border-collapse: collapse;
+	border-spacing: 0px;
+	border-radius: 12px 12px 0 0;
+	overflow: hidden;
+	box-shadow: 2px 2px 5px rgba(32, 32, 32, .3);
+	background: #FAFAFA;
+	text-align: center;
+	width: 1100px;
+}
+
+th {
+	background: #20A0FB;
+	color: #FAFAFA;
+	text-transform: uppercase;
+	font-weight: 500;
+}
+
+th, td {
+	padding: 12px 15px;
+}
+
+.btn-area {
+	display: flex;
+	justify-content: space-around;
+}
+
+.btn {
+	width: 66px;
+}
+
+.btn-red {
+	background-image: linear-gradient(135deg, #D31027 0%, #EA384D 51%, #D31027 100%);
+	text-align: center;
+	text-decoration: none;
+	padding: .5rem .5rem;
+    transition: 1.3s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 5px;
+}
+.btn-red:hover {
+	background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn-blue {
+	background-image: linear-gradient(135deg, #0396FF 0%, #50b6ff  51%, #23A3FF  100%);
+	text-align: center;
+	text-decoration: none;
+	padding: .5rem .5rem;
+    transition: 1.3s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 5px;
+}
+.btn-blue:hover {
+	background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}

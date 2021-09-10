@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" th:href="@{/css/style.css}" />
+	<link rel="stylesheet" th:href="@{/css/form.css}" />
+	<title>SelfCare | [[${pageTitle}]]</title>
+</head>
+<body>
+	<div class="background"></div>
+	<div class="content">
+		<h2 class="title">[[${pageTitle}]]</h2>
+		<form th:action="@{/users/save}" method="post" th:object="${user}">
+			<input type="hidden" th:field="*{id}">
+			<div class="form">
+				<div class="input-area">
+				  <span class="text">Name</span>
+				  <input type="text" th:field="*{name}" placeholder="Jackson Thompson" required>
+				</div>
+				<div class="input-area">
+				  <span class="text">Age</span>
+				  <input type="number" th:field="*{age}" placeholder="18" required>
+				</div>
+				<div class="input-area">
+				  <span class="text">Weight</span>
+				  <input type="number" th:field="*{weight}" placeholder="75 kg" required>
+				</div>
+				<div class="input-area">
+				  <span class="text">Height</span>
+				  <input type="number" th:field="*{height}" placeholder="170 cm" required>
+				</div>
+				<div class="input-area">
+				  <label class="text" for="inputGroupSelect01">Activity</label>
+				  <select id="inputGroupSelect01" th:field="*{activity}">
+				  	<option th:value="Sedentary">Sedentary (Office Job)</option>
+					<option th:value="Light">Light Exercise (1-2 days/week)</option>
+					<option th:value="Moderate">Moderate Exercise (3-5 days/week)</option>
+					<option th:value="Heavy">Heavy Exercise (6-7 days/week)</option>
+					<option th:value="Athlete">Athlete (2x per day)</option>
+				  </select>
+				</div>
+				<div class="input-area">
+					<label class="container2 text">Use medications
+					  <input type="checkbox" th:field="*{medication}">
+					  <span class="checkmark"></span>
+					</label>
+					<label class="container2 text">Have comorbidity
+					  <input type="checkbox" th:field="*{comorbidity}">
+					  <span class="checkmark"></span>
+					</label>
+				</div>
+				<div class="btn-area">
+					<button class="btn" type="button" onclick="cancelForm()">Cancel</button>
+					<button class="btn" type="submit">Save</button>
+				</div>
+			</div>
+		</form>
+	</div>
+	<script type="text/javascript">
+		function cancelForm() {
+			window.location = "/"
+		}
+	</script>
+</body>
+</html>

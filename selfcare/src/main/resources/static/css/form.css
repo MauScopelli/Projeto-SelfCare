@@ -1,0 +1,144 @@
+.content {
+	display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 2;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+}
+
+.content .title {
+	color: #FAFAFA;
+	font-size: 2rem;
+	font-weight: 500;
+	text-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+	margin: 2rem 0 1rem 0;
+}
+
+.form {
+	padding: 2rem;
+	border-radius: 12px;
+	background: #28A5FF;
+	box-shadow: 2px 2px 5px rgba(32, 32, 32, .3);
+	display: flex;
+	flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.input-area {
+	margin: .3rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text {
+	font-size: 1.1rem;
+	color: #FAFAFA;
+	margin-bottom: .2rem;
+}
+
+input[type=text], input[type=number], select {
+  padding: 12px 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 100%;
+  margin-right: 5px;
+  font-size: 1rem;
+}
+
+.btn-area {
+	display: flex;
+	justify-content: space-around;
+}
+
+.btn {
+	background-image: linear-gradient(135deg, #0396FF 0%, #50b6ff  51%, #23A3FF  100%);
+	width: 150px;
+	height: 50px;
+    padding: .8rem 0;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    transition: 1.3s;
+    background-size: 200% auto;
+    color: #FAFAFA;            
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, .2);
+	border-radius: 5px;
+	border-style: solid;
+	border-color: rgba(0,0,0,.08);
+}
+
+.btn:hover {
+	background-position: right center;
+    color: #FAFAFA;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.container2 {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin: 1.4rem 0;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.container2 input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #FDFDFD;
+  transition: 1s;
+}
+
+.container2:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.container2 input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container2 input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container2 .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}

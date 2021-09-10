@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" th:href="@{/css/style.css}" />
+	<link rel="stylesheet" th:href="@{/css/table.css}" />
+	<title>SelfCare | [[${pageTitle}]]</title>
+</head>
+<body>
+	<div class="background"></div>
+	<div class="content">
+		<h2 class="title">[[${pageTitle}]]</h2>
+		<a class="btn-grad" th:href="@{/users/new}">New User</a>
+		<div class="message" th:if="${message}">[[${message}]]</div>
+		<table>
+			<thead>
+				<tr>
+					<th>ID</th>
+					<th>Name</th>
+					<th>Age</th>
+					<th>Weight</th>
+					<th>Height</th>
+					<th>Comorbidity</th>
+					<th>Medication</th>
+					<th>Exercise</th>
+					<th>Action</th>
+				</tr>
+			</thead>
+			<tbody>
+				<th:block th:each="user:${listUsers}">
+					<tr>
+						<td>[[${user.id}]]</td>
+						<td>[[${user.name}]]</td>
+						<td>[[${user.age}]]</td>
+						<td>[[${user.weight}]]</td>
+						<td>[[${user.height}]]</td>
+						<td>[[${user.comorbidity ? 'Yes' : 'No' }]]</td>
+						<td>[[${user.medication ? 'Yes' : 'No' }]]</td>
+						<td>[[${user.activity}]]</td>
+						<td class="btn-area">
+							<a class="btn btn-blue" th:href="@{'/users/edit/' + ${user.id}}">Edit</a>
+							<a class="btn btn-red" th:href="@{'/users/delete/' + ${user.id}}">Delete</a>
+						</td>
+					</tr>
+				</th:block>
+			</tbody>
+		</table>
+	</div>
+</body>
+</html>
